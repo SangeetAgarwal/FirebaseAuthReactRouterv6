@@ -20,6 +20,9 @@ const StyledGoogleLoginButton = styled(GoogleLoginButton).attrs({
 const Login: React.FC = () => {
   const user = useAuth().user;
   const provider = new GoogleAuthProvider();
+  provider.setCustomParameters({
+    prompt: 'select_account'
+  });
   const auth = useAuth().auth;
   const [showDialog, setShowDialog] = useState(false);
   const open = () => setShowDialog(true);
