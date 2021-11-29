@@ -1,5 +1,3 @@
-import '@reach/dialog/styles.css';
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import { Login } from './components/open-id-connect/Login';

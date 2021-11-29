@@ -1,3 +1,5 @@
+import '@reach/dialog/styles.css';
+
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { GoogleLoginButton } from 'react-social-login-buttons';
